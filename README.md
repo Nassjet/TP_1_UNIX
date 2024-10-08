@@ -1,5 +1,8 @@
 # TP_1_UNIX
 
+##Sources
+ - 
+
 ## Post Installation
 
 ### 1. Configuration ssh:
@@ -60,7 +63,10 @@ Et on voit que la racine est sur la première partition /dev/sba1, et il y a 1,6
 
 `preseed`: fichier de préconfiguration linux ou debian ou ubuntu, concrétement on va répondre automatiquement à chaque question de l'installation comme ça, à chaque nouvelle configuration on gagne du temps parce qu'on a pas besoin de répondre manuellement à toutes les questions. 
 
-`Cas oubli du mot de passe `:
+`Cas oubli du mot de passe `: 
+ - accéder au GRUB au démarrage de la machine
+ - sur la ligne commençant par linux, puis modifier ro: lecture seule par rw : lecture écriture et mettre init=/bin/bash. Tout cela permet de démarrer la session en root.
+ - exécuter la commande passwd pour changer le mot de passe et redémarrer la machine. 
 
 
 
